@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis XV Años - Sophie Alejandra</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Archivos locales -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+    <!-- Pantalla del Sobre -->
+    <div id="envelope-screen" class="envelope-screen">
+        <div class="stars-bg"></div>
+        <div class="envelope-wrapper" id="envelope-btn">
+            <div class="envelope">
+                <div class="envelope-flap" id="flap"></div>
+                <div class="envelope-front">
+                    <div class="seal">
+                        <i class="fa-solid fa-rose"></i>
+                    </div>
+                    <div class="tap-text">Toca para abrir</div>
+                </div>
+                <div class="envelope-paper">
+                    <h2 class="paper-title">Invitación</h2>
+                    <i class="fa-solid fa-crown gold-icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido Principal de la Invitación -->
+    <div id="main-invitation" class="main-invitation hidden">
+        
+        <!-- Fondo de Imágenes con transición -->
+        <div class="bg-slideshow">
+            <div class="bg-slide" style="background-image: url('img/bg_1.png')"></div>
+            <div class="bg-slide" style="background-image: url('img/bg_2.png')"></div>
+            <div class="bg-slide" style="background-image: url('img/bg_3.png')"></div>
+            <div class="bg-slide" style="background-image: url('img/bg_4.jpg')"></div>
+            <div class="bg-slide" style="background-image: url('img/bg_5.png')"></div>
+            <div class="bg-overlay"></div>
+        </div>
+
+        <!-- Candelabros de Fondo -->
+        <i class="fa-solid fa-fire-flame-curved candelabra-bg candelabra-left"></i>
+        <i class="fa-solid fa-fire-flame-curved candelabra-bg candelabra-right" style="top: 60%;"></i>
+
+        <!-- Contenedor para la animación de pétalos y rosas -->
+        <div id="petals-container"></div>
+
+        <!-- Sección Hero / Portada -->
+        <header class="hero" id="home">
+            <div class="glass-panel text-center">
+                <p class="parents-text reveal">Yelibeth y Raúl tienen el gusto de invitarte a los XV años de su Bella Princesa</p>
+                <h1 class="title-main reveal">Sophie Alejandra</h1>
+                <div class="divider reveal">
+                    <i class="fa-solid fa-rose"></i>
+                </div>
+                <div class="intro-message reveal">
+                    <p>Sophie es un sueño hecho realidad y, como en los más hermosos cuentos de hadas, esta ocasión será el escenario perfecto para un gran baile en un majestuoso salón, en honor a sus 15 años.</p>
+                    <p>Deseamos que nos acompañes a vivir una velada mágica e inolvidable, colmada de alegría, cariño y gratitud, mientras compartimos la dicha de ver crecer a nuestra hermosa princesa y atesorar juntos este momento tan especial.</p>
+                </div>
+                <p class="date-hero reveal" style="margin-top: 2rem;">Sábado, 01 de Agosto de 2026</p>
+                <p class="time-hero reveal">7:00 p.m.</p>
+            </div>
+        </header>
+
+        <!-- Sección Contador -->
+        <section class="countdown-section reveal">
+            <div class="container">
+                <h2 class="section-title"><i class="fa-regular fa-clock"></i> Faltan</h2>
+                <div class="countdown" id="countdown">
+                    <div class="time-box">
+                        <span id="days">00</span>
+                        <p>Días</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="hours">00</span>
+                        <p>Horas</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="minutes">00</span>
+                        <p>Minutos</p>
+                    </div>
+                    <div class="time-box">
+                        <span id="seconds">00</span>
+                        <p>Segundos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Timeline -->
+        <section class="timeline-section reveal">
+            <div class="container">
+                <h2 class="section-title"><i class="fa-solid fa-book-open"></i> Nuestra Princesa</h2>
+                <p class="text-center timeline-intro">Donde la historia de nuestra princesa comienza, amada desde el primer segundo que supimos de su existencia, y hasta el final de nuestros días.</p>
+                
+                <div class="timeline">
+                    <!-- Item 1: Bebé -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-img-container">
+                                <img src="img/timeline_1.jpg" alt="Sophie Bebé">
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Amor a primera vista</h3>
+                                <p>Desde el momento en que te vimos, supimos que nuestra vida estaría llena de magia. Siempre has sido nuestra princesa hermosa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 2: Niña -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-img-container">
+                                <img src="img/timeline_2.jpg" alt="Sophie Niña">
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Nuestra pequeña luz</h3>
+                                <p>Cada día a tu lado ha sido un regalo. Tu sonrisa ilumina nuestro mundo y nuestro amor por ti crece con cada instante.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 3: Más grande -->
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-img-container">
+                                <img src="img/timeline_3.jpg" alt="Sophie Más Grande">
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Bella por dentro y por fuera</h3>
+                                <p>No solo nos maravilla tu belleza exterior, sino la bondad inmensa de tu corazón. Eres el mayor orgullo de mamá y papá.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item 4: Adolescente -->
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <div class="timeline-img-container">
+                                <img src="img/timeline_4.jpg" alt="Sophie Adolescente">
+                            </div>
+                            <div class="timeline-text">
+                                <h3>Nuestra vida entera</h3>
+                                <p>No importa cuánto crezcas o cuán lejos vueles, siempre serás nuestra hermosa princesa. Te amamos con toda el alma.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Detalles -->
+        <section class="details-section reveal">
+            <div class="container">
+                <h2 class="section-title"><i class="fa-brands fa-fort-awesome"></i> Recepción</h2>
+                <div class="cards-container single-card-center">
+                    
+                    <!-- Tarjeta Recepción -->
+                    <div class="detail-card glass-card">
+                        <div class="card-icon">
+                            <i class="fa-solid fa-chess-rook"></i>
+                        </div>
+                        <h3>Salón de Eventos Deyder</h3>
+                        <p class="time">7:00 p.m.</p>
+                        <p class="address">Calle 76 #44-45</p>
+                        <a href="https://maps.google.com/?q=Calle+76+%2344-45" class="btn-gold" target="_blank">
+                            <i class="fa-solid fa-map-location-dot"></i> Ver en Mapa
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Información Adicional -->
+        <section class="info-section reveal">
+            <div class="container">
+                <div class="info-grid">
+                    
+                    <!-- Código de Vestimenta (Clickeable) -->
+                    <div class="info-box glass-card clickable-card" id="dress-code-card" title="Haz clic para ver ejemplos">
+                        <i class="fa-solid fa-masks-theater"></i>
+                        <h3>Código de Vestimenta</h3>
+                        <p><strong>Mujeres:</strong> Vestido de cóctel largo.</p>
+                        <p><strong>Hombres:</strong> Smoking.</p>
+                        <p class="note warning">⚠️ Se reservan colores dorado y rojo.</p>
+                        <div class="click-hint"><i class="fa-solid fa-hand-pointer"></i> Ver estilos</div>
+                    </div>
+
+                    <div class="info-box glass-card">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3>Regalos</h3>
+                        <p>El mejor regalo es tu presencia, pero si deseas tener un detalle:</p>
+                        <h4 class="sobres-title"><i class="fa-solid fa-envelope-open-text"></i> Lluvia de Sobres</h4>
+                        <p class="note">Habrá un baúl o cofre mágico en la recepción para depositar tus buenos deseos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección RSVP -->
+        <section class="rsvp-section reveal">
+            <div class="glass-panel text-center">
+                <h2 class="section-title"><i class="fa-solid fa-feather-pointed"></i> Confirmación</h2>
+                <p>Es muy importante para nosotros contar contigo. Por favor, confirma tu asistencia.</p>
+                <a href="https://wa.me/573170932972" class="btn-gold large" target="_blank" id="rsvp-btn">
+                    <i class="fa-brands fa-whatsapp"></i> Confirmar Asistencia
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container text-center">
+                <h2 class="footer-title">Sophie Alejandra</h2>
+                <div class="divider">
+                    <i class="fa-solid fa-rose"></i>
+                </div>
+                <p>Esperamos contar con su compañía en esta mágica noche.</p>
+            </div>
+        </footer>
+
+        <!-- Botón de Audio Flotante -->
+        <button id="audio-btn" class="audio-btn playing">
+            <i class="fa-solid fa-pause"></i>
+        </button>
+
+        <!-- Modal de Código de Vestimenta -->
+        <div id="dress-modal" class="modal-overlay hidden">
+            <div class="modal-content glass-card">
+                <button id="close-modal" class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+                <h3 class="modal-title">Inspiración de Vestimenta</h3>
+                <p class="modal-subtitle">Sugerencias para brillar en esta noche mágica</p>
+                <div class="modal-images">
+                    <div class="modal-img-wrapper" style="max-width: 350px;">
+                        <h4>Mujeres</h4>
+                        <div class="avatar-grid">
+                            <div class="avatar-container">
+                                <img src="img/mujeres_1.jpg" alt="Vestido largo / Cóctel de gala" class="dress-code-img">
+                            </div>
+                            <div class="avatar-container">
+                                <img src="img/mujeres_2.jpg" alt="Vestido largo / Cóctel de gala" class="dress-code-img">
+                            </div>
+                        </div>
+                        <p>Vestido largo / Cóctel de gala</p>
+                    </div>
+                    <div class="modal-img-wrapper" style="max-width: 350px;">
+                        <h4>Hombres</h4>
+                        <div class="avatar-grid">
+                            <div class="avatar-container">
+                                <img src="img/hombres_1.jpg" alt="Smoking / Traje Formal" class="dress-code-img">
+                            </div>
+                            <div class="avatar-container">
+                                <img src="img/hombres_2.jpg" alt="Smoking / Traje Formal" class="dress-code-img">
+                            </div>
+                        </div>
+                        <p>Smoking / Traje Formal</p>
+                    </div>
+                </div>
+                <p class="note warning" style="margin-top: 15px;">Recuerda evitar colores Dorado y Rojo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reproductor de audio local para música de fondo (reemplaza YouTube para evitar bloqueos) -->
+    <audio id="bg-music" src="audio/music.m4a" loop></audio>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
